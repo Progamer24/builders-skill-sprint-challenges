@@ -13,30 +13,18 @@ import os
 os.environ["BYPASS_TOOL_CONSENT"] = "true"
 
 from strands import Agent
+from strands_tools import mem0_memory
 
 MODEL = "us.amazon.nova-pro-v1:0"
 
 
-# ============================================================
-# TODO 1: Import mem0_memory from strands_tools
-# ============================================================
-# Hint: from strands_tools import mem0_memory
+# Create an agent with mem0_memory tool
+agent = Agent(
+    model=MODEL,
+    tools=[mem0_memory],
+    system_prompt="You are a helpful assistant with persistent memory. When the user tells you something to remember, store it. When they ask about their preferences, recall what you've stored."
+)
 
-# Your import here
-
-
-# ============================================================
-# TODO 2: Create an agent with mem0_memory tool
-# ============================================================
-# Hint: Agent(model=MODEL, tools=[mem0_memory], system_prompt="...")
-# System prompt should tell the agent to store and recall user preferences
-
-agent = None  # Replace this line
-
-
-# ============================================================
-# TODO 3: Interactive loop — chat with the memory agent
-# ============================================================
 
 print("🧠 Memory Agent Ready!")
 print("Try: 'Remember that my name is [your name] and I love [food]'")
@@ -52,9 +40,8 @@ while True:
             print("Bye! 👋")
             break
 
-        # TODO: Send user_input to the agent and print the response
-        # Hint: response = agent(user_input)
-        print("Agent: [TODO - call the agent here]")
+        response = agent(user_input)
+        print(f"Agent: {response}")
 
     except KeyboardInterrupt:
         print("\nBye! 👋")
