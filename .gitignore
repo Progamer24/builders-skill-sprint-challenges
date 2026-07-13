@@ -1,0 +1,29 @@
+# Generated Documentation Files (Skill Sprint Workshop)
+May-2026-DevOps-Month/BLOG-POST.md
+May-2026-DevOps-Month/COMPLETION-SUMMARY.md
+May-2026-DevOps-Month/INDEX.md
+May-2026-DevOps-Month/README-DELIVERABLES.md
+May-2026-DevOps-Month/WORKSHOP-GUIDE.md
+
+# Challenge FINDINGS Files (Generated)
+May-2026-DevOps-Month/challenge-1-meet-your-agent/FINDINGS.md
+May-2026-DevOps-Month/challenge-2-first-investigation/FINDINGS.md
+May-2026-DevOps-Month/challenge-3-stress-and-diagnose/FINDINGS.md
+May-2026-DevOps-Month/challenge-4-bad-deploy-detective/FINDINGS.md
+May-2026-DevOps-Month/challenge-5-build-your-own-agentic-sre/FINDINGS.md
+
+# Temporary/Debug Files
+May-2026-DevOps-Month/challenge2-code.py
+May-2026-DevOps-Month/challenge2-fixed.zip
+May-2026-DevOps-Month/index.py
+May-2026-DevOps-Month/index_fixed.py
+May-2026-DevOps-Month/lambda-fixed.zip
+
+# IDE & OS files
+.vscode/
+.DS_Store
+*.swp
+*.swo
+*~
+.env
+.env.local
